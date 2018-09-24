@@ -67,9 +67,14 @@ h1,h2,h3,h4,h5,h6 {
 .navbar-nav li a {
   color: black;
 }
+.nav > li:first-child a {
+  color: black;
+  opacity: 1;
+}
 .nav > li > a:focus, .nav > li > a:hover, .nav > .active > a {
   color: #574C9F;
 }
+
 .navbar-toggle {
   background: #574C9F;
 }
@@ -133,6 +138,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .media {
   display: flex;
+  align-items: center;
 }
 .media-left {
   position: static !important;
@@ -170,11 +176,45 @@ h1,h2,h3,h4,h5,h6 {
   min-width: 42px;
 }
 
+/* Features and cards */
+
+.img-logo {
+  margin: 50px auto;
+  position: static;
+}
+.cards {
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
 @media screen and (max-width: 992px) {
   .benefits-img {
     margin: 25px 0 0 0;
+    overflow: hidden;
+  }
+  .tabs__form{
+    justify-content: space-around;
+  }
+  .tabs__label {
+    flex: 0;
   }
 }
+
+@media screen and (max-width: 730px) {
+  .card {
+    max-width: 350px;
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #features h2 {
+    font-size: 32px;
+  }
+}
+
 
 /* Contact */ 
 
@@ -186,3 +226,6 @@ h1,h2,h3,h4,h5,h6 {
 .btn-contact-bg:focus {
   background: #574C9F;
 }
+
+/* why-researchably */
+
